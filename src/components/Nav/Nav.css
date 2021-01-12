@@ -112,6 +112,7 @@
     width: 100vw;
     height: 5rem;
     box-shadow: none;
+    overflow: auto;
   }
 
   .logo {
@@ -130,6 +131,12 @@
     margin: 0;
     margin-bottom: 5rem;
     height: calc(100vh - 7rem);
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .navbar {
+    overflow: auto;
   }
 }
 

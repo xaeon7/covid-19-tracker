@@ -53,7 +53,7 @@ class App extends React.Component{
                             <main>
                                 <CountryPicker handleCountryChange= {this.handleCountryChange}/>
                                 <Switch>
-                                    <Route path='/' exact>
+                                    <Route path='/covid-19-tracker' exact>
                                         <div className='overview-page'>
                                             <Overview data={data}/>
                                             <div className='overview-additional'>
@@ -62,7 +62,7 @@ class App extends React.Component{
                                             </div>
                                         </div>
                                     </Route>
-                                    <Route path='/graphs'>
+                                    <Route path='/covid-19-tracker/graphs'>
                                         <Graphs history={history} data={data}/>
                                     </Route>
                                 </Switch>

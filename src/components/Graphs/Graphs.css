@@ -20,8 +20,7 @@
   }
   .graphs .overview-graph {
     position: absolute;
-    width: 60vh !important;
-    height: 70vw;
-    transform: rotate(-90deg);
+    width: 85vw;
+    height: 60vw;
   }
 }
