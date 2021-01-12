@@ -1,0 +1,111 @@
+.map {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 0;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+/* .fa-map-marker-alt {
+  width: 40px;
+  margin: -4rem 0 0 0;
+  color: #006dac;
+} */
+.info-flag {
+  height: 1.2rem !important;
+  margin-left: 1rem;
+}
+
+.info-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(141, 141, 141, 0.432);
+  margin-bottom: 5px;
+}
+
+.info-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buble {
+  margin-right: 5px;
+  width: 0.6rem;
+  height: 0.6rem;
+  overflow: hidden;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.buble-infected {
+  background-color: #ffd723;
+}
+
+.buble-recovered {
+  background-color: #1cc532;
+}
+
+.buble-deaths {
+  background-color: #d80b26;
+}
+
+.info-type {
+  font-weight: bold !important;
+  margin-right: 0.2rem;
+}
+
+.fa-map-marker-alt path {
+  border: oldlace;
+}
+
+/* .leaflet-popup-content-wrapper {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white !important ;
+  margin-top: -5rem !important;
+}
+
+.leaflet-popup-tip-container {
+  display: none;
+} */
+.leaflet-marker-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.map .leaflet-container {
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+  .map .leaflet-container {
+    height: calc(100vh - 5rem);
+  }
+}

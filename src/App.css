@@ -1,0 +1,11 @@
+.overview-page {
+  transition: all 0.3s ease;
+}
+
+.overview-additional {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0 2rem 0;
+}
